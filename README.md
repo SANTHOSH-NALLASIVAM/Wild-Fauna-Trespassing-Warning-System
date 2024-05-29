@@ -4,7 +4,7 @@ To get started with Wild Fauna Trespassing Warning System, you will need to foll
 1.Clone the repository to your local machine.
 
 2.Install the necessary dependencies as specified in the requirements.txt file.
-
+ 
 3.Run the project by executing the detection.py file.
 
 # How to Use the Project
