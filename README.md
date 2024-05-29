@@ -1,4 +1,4 @@
-#Getting started
+Getting started
 To get started with Wild Fauna Trespassing Warning System, you will need to follow these steps:
 
 1.Clone the repository to your local machine.
