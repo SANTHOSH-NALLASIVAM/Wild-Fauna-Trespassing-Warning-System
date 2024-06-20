@@ -27,8 +27,8 @@ np.random.seed(42)
 COLORS = np.random.randint(0, 255, size=(len(LABELS), 3),
 	dtype="uint8")
 
-weightsPath = os.path.abspath("./yolo-coco/yolov3-tiny.weights")
-configPath = os.path.abspath("./yolo-coco/yolov3-tiny.cfg")
+weightsPath = os.path.abspath("/home/ubuntu/Wild-Fauna-Trespassing-Warning-System/yolo-coco/yolov3-tiny.weights")
+configPath = os.path.abspath("/home/ubuntu/Wild-Fauna-Trespassing-Warning-System/yolo-coco/yolov3-tiny.cfg")
 
 # print(configPath, "\n", weightsPath)
 
