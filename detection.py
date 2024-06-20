@@ -4,7 +4,10 @@ import cv2
 import os
 import numpy as np
 from playsound import playsound
-import threading
+
+
+
+
 
 def sendmsg(targetno,message):
     import requests
@@ -18,7 +21,7 @@ flag = False
 
 labelsPath = "./yolo-coco/coco.names"
 LABELS = open(labelsPath).read().strip().split("\n")
-final_classes = ['bird','sheep', 'horse', 'cow', 'elephant', 'zebra', 'bear', 'giraffe']
+final_classes = ['person','sheep', 'horse', 'cow', 'elephant', 'zebra', 'bear', 'giraffe']
 
 np.random.seed(42)
 COLORS = np.random.randint(0, 255, size=(len(LABELS), 3),
@@ -131,7 +134,7 @@ while True:
                     winsound.PlaySound(filename, winsound.SND_FILENAME)
 
                     cv2.imwrite("alert.jpg", frame)
-                    sendmail()
+                    
                     sendmsg("6374729150", " !!!! Alert !!!! Animal Detected "+LABELS[classIDs[i]])
 
 
